@@ -16,65 +16,69 @@
 
   <div class="container-fluid">
     <div class="row">
-      <nav class="navbar-expand-lg bg-body-tertiary p-3 mb-3">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 mb-3">
         <div class="container-fluid d-flex">
-          <div class="fs-3">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="fs-3 collapse navbar-collapse my-1" id="navbarTogglerDemo01">
             <i class="fa-brands fa-instagram"></i>
             <a href="#" class="navbar-brand"><strong>Instagram</strong></a>
-          </div>
-
-          <div class="ms-auto">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Create new post
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Caption:</p>
-                    <div class="form-floating mb-2">
-                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                        style="height: 100px"></textarea>
-                      <label for="floatingTextarea2">Add the caption of your post here</label>
+            <div class="ms-auto collapse navbar-collapse d-flex flex-row-reverse" id="navbarTogglerDemo01">
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                  data-bs-display="static" aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><button class="dropdown-item" type="button">Profile</button></li>
+                  <li><button class="dropdown-item" type="button">Accesibility</button></li>
+                  <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><button class="dropdown-item text-danger" type="button">Log out</button></li>
+                </ul>
+              </div>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-success mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create new post
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <button type="button" class="btn btn-light">
-                      <i class="fa-solid fa-camera"></i>
-                    </button>
-                    <button type="button" class="btn btn-light">
-                      <i class="fa-solid fa-location-dot"></i>
-                    </button>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Publish</button>
+                    <div class="modal-body">
+                      <p>Caption:</p>
+                      <div class="form-floating mb-2">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                          style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Add the caption of your post here</label>
+                      </div>
+                      <button type="button" class="btn btn-light">
+                        <i class="fa-solid fa-camera"></i>
+                      </button>
+                      <button type="button" class="btn btn-light">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </button>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Publish</button>
+                    </div>
                   </div>
                 </div>
+
               </div>
-
             </div>
 
-            <div class="btn-group ms-auto">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-                data-bs-display="static" aria-expanded="false">
-                <i class="fa-solid fa-gear"></i>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><button class="dropdown-item" type="button">Profile</button></li>
-                <li><button class="dropdown-item" type="button">Accesibility</button></li>
-                <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><button class="dropdown-item text-danger" type="button">Log out</button></li>
-              </ul>
-            </div>
+
           </div>
 
       </nav>
@@ -104,48 +108,48 @@
         <!--Grid Feed-->
         <div class="container-fluid text-center">
           <div class="row d-flex">
-            <div class="col p-1">
+            <div class="col-md-4 p-1">
               <img class="w-100" src="https://cdn.pixabay.com/photo/2024/02/22/05/40/natural-scenery-8589165_640.jpg"
                 alt="">
             </div>
-            <div class="col p-1">
+            <div class="col-md-4 p-1">
               <img class="w-100 h-100"
                 src="https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/45ed8ecf-0bb2-4e34-8fcf-624db47c43c8/Golden+Retrievers+dans+pet+care.jpeg"
                 alt="">
             </div>
-            <div class="col p-1">
+            <div class="col-md-4 p-1">
               <img class="w-100 h-100"
                 src="https://st2.depositphotos.com/1017986/5385/i/450/depositphotos_53852037-stock-photo-happy-male-friends-at-home.jpg"
                 alt="">
             </div>
           </div>
           <div class="row d-flex">
-            <div class="col p-1">
+            <div class="col-md-4 p-1">
               <img class="w-100 h-100"
                 src="https://www.eatingwell.com/thmb/m5xUzIOmhWSoXZnY-oZcO9SdArQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg"
                 alt="">
             </div>
-            <div class="col p-1">
+            <div class="col-md-4 p-1">
               <img class="w-100 h-100"
                 src="https://assets.weforum.org/article/image/XJkVQrA6uy9CVqo_9e3DMLlKvkOHcr8wPO4RbDhbsfc.jpg" alt="">
             </div>
-            <div class="col p-1">
+            <div class="col-md-4 p-1">
               <img class="w-100 h-100"
                 src="https://img.freepik.com/fotos-premium/fuegos-artificiales-confeti-sobre-multitud-festival-musica_989072-16.jpg?semt=ais_hybrid"
                 alt="">
             </div>
           </div>
           <div class="row d-flex">
-            <div class="col p-1">
+            <div class="col-md-4 p-1">
               <img class="w-100 h-100"
                 src="https://www.marthastewart.com/thmb/nNCpv4LG_s8JqYeUwXac67zCTgY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/garden-party-outdoor-table-getty-673471191-2a9b395afa294d4898d303ba40ac1a28.jpg"
                 alt="">
             </div>
-            <div class="col p-1">
+            <div class="col-md-4 p-1">
               <img class="w-100 h-100"
                 src="https://breedlovemusic.com/wp-content/uploads/2022/09/breedlove-bass-guitar_3-1536x974.jpg" alt="">
             </div>
-            <div class="col p-1">
+            <div class="col-md-4 p-1">
               <img class="w-100 h-100" src="https://storage.googleapis.com/pod_public/1300/168364.jpg" alt="">
             </div>
           </div>
@@ -154,7 +158,7 @@
       <div class="tab-pane fade" id="show-column" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
 
         <!--Column grid-->
-        <div class="container w-50 my-3">
+        <div class="container w-sm-50 my-3">
           <div class="d-flex bg-white border rounded-top p-2">
             <h3 class="flex-grow-1">Landscape</h3>
             <p>10/15</p>
@@ -171,7 +175,7 @@
           </div>
         </div>
 
-        <div class="container w-50 my-3">
+        <div class="container w-lg-50 my-3">
           <div class="d-flex bg-white border rounded-top p-2">
             <h3 class="flex-grow-1">My crazy dog!</h3>
             <p>10/15</p>
@@ -189,7 +193,7 @@
           </div>
         </div>
 
-        <div class="container w-50 my-3">
+        <div class="container w-lg-50 my-3">
           <div class="d-flex bg-white border rounded-top p-2">
             <h3 class="flex-grow-1">With friends</h3>
             <p>10/15</p>
